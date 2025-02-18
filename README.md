@@ -1,2 +1,2 @@
-# Stadium_ticket_managment
+# Stadium_ticket_management
 This is my final high school project.
