@@ -49,6 +49,7 @@
             this.close.Size = new System.Drawing.Size(22, 21);
             this.close.TabIndex = 0;
             this.close.Text = "X";
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // label1
             // 
@@ -107,6 +108,7 @@
             this.login_showPass.TabIndex = 6;
             this.login_showPass.Text = "Show password";
             this.login_showPass.UseVisualStyleBackColor = true;
+            this.login_showPass.CheckedChanged += new System.EventHandler(this.login_showPass_CheckedChanged);
             // 
             // login_btn
             // 
@@ -123,6 +125,7 @@
             this.login_btn.TabIndex = 7;
             this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
             // label4
             // 
@@ -155,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 631);
+            this.ClientSize = new System.Drawing.Size(383, 631);
             this.Controls.Add(this.login_signupBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.login_btn);

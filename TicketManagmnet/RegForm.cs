@@ -22,7 +22,7 @@ namespace TicketManagmnet
 
         private void reg_checkBox_CheckedChanged(object sender, EventArgs e)
         {
-             reg_password.PasswordChar = reg_checkBox.Checked ? '\0' : '*';
+            reg_password.PasswordChar = reg_checkBox.Checked ? '\0' : '*';
             reg_cPassword.PasswordChar = reg_checkBox.Checked ? '\0' : '*';
         }
 

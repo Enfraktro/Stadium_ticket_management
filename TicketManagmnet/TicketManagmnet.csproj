@@ -46,6 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addeventform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addeventform.Designer.cs">
+      <DependentUpon>addeventform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaffForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddStaffForm.Designer.cs">
+      <DependentUpon>AddStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstaffsform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addstaffsform.Designer.cs">
+      <DependentUpon>addstaffsform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_panel.Designer.cs">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buyTicketForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="buyTicketForm.Designer.cs">
+      <DependentUpon>buyTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +91,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,20 +103,44 @@
       <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrationForm.cs" />
+    <Compile Include="staffData.cs" />
+    <Compile Include="staffMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffMainForm.Designer.cs">
+      <DependentUpon>staffMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addeventform.resx">
+      <DependentUpon>addeventform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaffForm.resx">
+      <DependentUpon>AddStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstaffsform.resx">
+      <DependentUpon>addstaffsform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_panel.resx">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buyTicketForm.resx">
+      <DependentUpon>buyTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffMainForm.resx">
+      <DependentUpon>staffMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +154,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\available_events_icon.png" />
+    <Content Include="assets\daily_income %282%29.png" />
+    <Content Include="assets\dashboard_icon.png" />
+    <Content Include="assets\event_icon.png" />
+    <Content Include="assets\logout_icon.png" />
+    <Content Include="assets\rugby_logo.png" />
+    <Content Include="assets\staff_icon.png" />
+    <Content Include="assets\total_income.png" />
+    <Content Include="assets\user_icon.png" />
+    <Content Include="assets\visitors_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="event_directory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
